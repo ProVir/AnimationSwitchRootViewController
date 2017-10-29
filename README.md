@@ -8,7 +8,7 @@
 Extension for UIWindow - animation switch rootViewController in UIWindow. Support Objective-C, Swift 3 and 4.
 If you need pure Objective-C, use AnimationSwitchRootViewControllerObjC.
 
-[Example demo](https://github.com/ProVir/AnimationSwitchRootViewController/blob/master/demo.gif)
+![Example demo gif](https://github.com/ProVir/AnimationSwitchRootViewController/blob/master/demo.gif)
 
 
 - [Features](#features)
