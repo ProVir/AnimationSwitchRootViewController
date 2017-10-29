@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 //Core Animation: transiction and temp background window
 - (void) setRootViewController:(UIViewController *)rootViewController withTransition:(CATransition*)transition backgroundColor:(nullable UIColor*)color andBackgroundView:(nullable UIView*)view;
 
-//Manually animation: move snaphots
+//Manually animation: move snapshots
 - (void) setRootViewController:(UIViewController *)rootViewController withManuallyInAnimation:(BOOL)inAnimation outAnimation:(BOOL)outAnimation routeType:(NSString*)transitionSubType duration:(CGFloat)duration options:(UIViewAnimationOptions)options;
 
 

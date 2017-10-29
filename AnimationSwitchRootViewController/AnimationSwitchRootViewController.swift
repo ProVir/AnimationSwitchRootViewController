@@ -108,14 +108,14 @@ public extension UIWindow {
   
     
     /**
-     Manually animation: move snaphots views (old and new).
+     Manually animation: move snapshots views (old and new).
      
      - Parameters:
          - rootViewController: ViewController to switch.
          - direction: Direction animation. Equal CATransitionSubType in CATransition.
          - inAnimation: Animation position for new ViewController.
          - outAnimation: Animation position for old ViewController.
-         - duration: Duration animation. Default = 0.3.
+         - duration: Duration animation. Default = 0.4.
          - options: UIViewAnimationOptions for UIView animations.
      */
     @objc public func switchRootViewControllerManuallyMove(to rootViewController:UIViewController,

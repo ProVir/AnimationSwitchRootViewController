@@ -100,7 +100,7 @@
                             <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rCc-Vm-03k">
                                 <rect key="frame" x="16" y="351.5" width="343" height="307.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Manually move (snaphots)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="MEt-cs-fF8">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Manually move (snapshots)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="MEt-cs-fF8">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="32"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                         <nil key="textColor"/>
@@ -205,9 +205,9 @@
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="Lug-Ye-0lN"/>
-                                <exclude reference="awr-Jf-uIp"/>
                                 <exclude reference="F5z-Gx-bOZ"/>
                                 <exclude reference="wce-zA-bYR"/>
+                                <exclude reference="awr-Jf-uIp"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
@@ -215,11 +215,11 @@
                                 <include reference="Lug-Ye-0lN"/>
                                 <exclude reference="Rfa-cH-ADA"/>
                                 <exclude reference="u3L-9t-Tgp"/>
-                                <include reference="awr-Jf-uIp"/>
                                 <include reference="F5z-Gx-bOZ"/>
                                 <exclude reference="KQa-ku-zjq"/>
                                 <exclude reference="kgE-dE-I3O"/>
                                 <include reference="wce-zA-bYR"/>
+                                <include reference="awr-Jf-uIp"/>
                             </mask>
                         </variation>
                     </view>
