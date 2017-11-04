@@ -14,6 +14,7 @@ Support two types animation: CATransition and move shnapshots views.
   s.author       = { "ViR (Vitaliy Korotkiy)" => "admin@provir.ru" }
   s.source       = { :git => "https://github.com/ProVir/AnimationSwitchRootViewController.git", :tag => "#{s.version}" }
 
+  s.platform     = :ios, "8.0"
   s.default_subspec = 'Swift'
 
 

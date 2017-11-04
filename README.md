@@ -6,7 +6,7 @@
 [![License](https://cocoapod-badges.herokuapp.com/l/AnimationSwitchRootViewController/badge.png)](https://github.com/ProVir/AnimationSwitchRootViewController/blob/master/LICENSE)
 
 Extension for UIWindow - animation switch rootViewController in UIWindow. Support Objective-C, Swift 3 and 4.
-If you need pure Objective-C, use AnimationSwitchRootViewControllerObjC.
+If you need pure Objective-C, use AnimationSwitchRootViewController/ObjC.
 
 ![Example demo gif](https://github.com/ProVir/AnimationSwitchRootViewController/blob/master/demo.gif)
 
@@ -75,9 +75,9 @@ Then, run the following command:
 $ pod install
 ```
 
-if you need pure Objective-C, use AnimationSwitchRootViewControllerObjC:
+if you need pure Objective-C, use AnimationSwitchRootViewController/ObjC:
 ```ruby
-pod 'AnimationSwitchRootViewControllerObjC', '~> 1.0'
+pod 'AnimationSwitchRootViewController/ObjC', '~> 1.0'
 ```
 
 ### Carthage
