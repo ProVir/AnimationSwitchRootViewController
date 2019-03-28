@@ -5,7 +5,7 @@
 [![Platform](https://cocoapod-badges.herokuapp.com/p/AnimationSwitchRootViewController/badge.png)](http://cocoapods.org/pods/AnimationSwitchRootViewController)
 [![License](https://cocoapod-badges.herokuapp.com/l/AnimationSwitchRootViewController/badge.png)](https://github.com/ProVir/AnimationSwitchRootViewController/blob/master/LICENSE)
 
-Extension for UIWindow - animation switch rootViewController in UIWindow. Support Objective-C, Swift 3 and 4.
+Extension for UIWindow - animation switch rootViewController in UIWindow. Support Objective-C, Swift 5.
 If you need pure Objective-C, use AnimationSwitchRootViewController/ObjC.
 
 ![Example demo gif](https://github.com/ProVir/AnimationSwitchRootViewController/blob/master/demo.gif)
@@ -32,8 +32,8 @@ If you need pure Objective-C, use AnimationSwitchRootViewController/ObjC.
 ## Requirements
 
 - iOS 8.0+
-- Xcode 8.1, 8.2, 8.3, and 9.0
-- Swift 3.0, 3.1, 3.2, and 4.0
+- Xcode 10.2
+- Swift 5.0
 
 
 ## Communication
@@ -55,14 +55,13 @@ If you need pure Objective-C, use AnimationSwitchRootViewController/ObjC.
 $ gem install cocoapods
 ```
 
-> CocoaPods 1.1.0+ is required to build AnimationSwitchRootViewController 1.0.0+.
+> CocoaPods 1.6.0+ is required to build AnimationSwitchRootViewController 1.0.0+.
 
 To integrate AnimationSwitchRootViewController into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
-use_frameworks!
 
 target '<Your Target Name>' do
 pod 'AnimationSwitchRootViewController', '~> 1.0'
