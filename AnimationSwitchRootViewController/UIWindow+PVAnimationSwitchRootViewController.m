@@ -46,7 +46,7 @@
 }
 
 
-- (void) setRootViewController:(UIViewController *)rootViewController withManuallyInAnimation:(BOOL)inAnimation outAnimation:(BOOL)outAnimation routeType:(NSString*)transitionSubType duration:(CGFloat)duration options:(UIViewAnimationOptions)options {
+- (void) setRootViewController:(UIViewController *)rootViewController withManuallyInAnimation:(BOOL)inAnimation outAnimation:(BOOL)outAnimation routeType:(CATransitionSubtype)transitionSubType duration:(CGFloat)duration options:(UIViewAnimationOptions)options {
     
     if(!inAnimation && !outAnimation) {
         CATransition* transition = [CATransition animation];
@@ -119,7 +119,7 @@
 
 
 #pragma mark Simplify function
-- (void) setRootViewController:(UIViewController *)rootViewController pushTransactionRoute:(NSString*)transitionSubType duration:(CGFloat)duration backgroundColor:(UIColor*)color andBackgroundView:(UIView*)view {
+- (void) setRootViewController:(UIViewController *)rootViewController pushTransactionRoute:(CATransitionSubtype)transitionSubType duration:(CGFloat)duration backgroundColor:(UIColor*)color andBackgroundView:(UIView*)view {
     
     CATransition* transition = [CATransition animation];
     transition.type = kCATransitionPush;
@@ -130,7 +130,7 @@
     [self setRootViewController:rootViewController withTransition:transition backgroundColor:color andBackgroundView:view];
 }
 
-- (void) setRootViewController:(UIViewController *)rootViewController pushTransactionRoute:(NSString*)transitionSubType duration:(CGFloat)duration backgroundColor:(UIColor*)color andBackgroundImage:(UIImage*)image {
+- (void) setRootViewController:(UIViewController *)rootViewController pushTransactionRoute:(CATransitionSubtype)transitionSubType duration:(CGFloat)duration backgroundColor:(UIColor*)color andBackgroundImage:(UIImage*)image {
     
     UIImageView* imageView;
     if(image != nil) imageView = [[UIImageView alloc] initWithImage:image];
@@ -139,7 +139,7 @@
 }
 
 
-- (void) setRootViewController:(UIViewController *)rootViewController pushManuallyRoute:(NSString*)transitionSubType duration:(CGFloat)duration {
+- (void) setRootViewController:(UIViewController *)rootViewController pushManuallyRoute:(CATransitionSubtype)transitionSubType duration:(CGFloat)duration {
     [self setRootViewController:rootViewController withManuallyInAnimation:YES outAnimation:YES routeType:transitionSubType duration:duration options:0];
 }
 

@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "AnimationSwitchRootViewController"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "Extension for UIWindow - animation switch rootViewController in UIWindow"
 
   s.description  = <<-DESC
@@ -15,6 +15,7 @@ Support two types animation: CATransition and move shnapshots views.
   s.source       = { :git => "https://github.com/ProVir/AnimationSwitchRootViewController.git", :tag => "#{s.version}" }
 
   s.platform     = :ios, "8.0"
+  s.swift_version = '5.0'
   s.default_subspec = 'Swift'
 
 

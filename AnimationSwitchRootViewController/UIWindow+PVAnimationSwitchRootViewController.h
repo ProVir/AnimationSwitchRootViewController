@@ -15,16 +15,16 @@ NS_ASSUME_NONNULL_BEGIN
 - (void) setRootViewController:(UIViewController *)rootViewController withTransition:(CATransition*)transition backgroundColor:(nullable UIColor*)color andBackgroundView:(nullable UIView*)view;
 
 //Manually animation: move snapshots
-- (void) setRootViewController:(UIViewController *)rootViewController withManuallyInAnimation:(BOOL)inAnimation outAnimation:(BOOL)outAnimation routeType:(NSString*)transitionSubType duration:(CGFloat)duration options:(UIViewAnimationOptions)options;
+- (void) setRootViewController:(UIViewController *)rootViewController withManuallyInAnimation:(BOOL)inAnimation outAnimation:(BOOL)outAnimation routeType:(CATransitionSubtype)transitionSubType duration:(CGFloat)duration options:(UIViewAnimationOptions)options;
 
 
 //Simplify function
-- (void) setRootViewController:(UIViewController *)rootViewController pushTransactionRoute:(NSString*)transitionSubType duration:(CGFloat)duration backgroundColor:(nullable UIColor*)color andBackgroundView:(nullable UIView*)view;
+- (void) setRootViewController:(UIViewController *)rootViewController pushTransactionRoute:(CATransitionSubtype)transitionSubType duration:(CGFloat)duration backgroundColor:(nullable UIColor*)color andBackgroundView:(nullable UIView*)view;
 
-- (void) setRootViewController:(UIViewController *)rootViewController pushTransactionRoute:(NSString*)transitionSubType duration:(CGFloat)duration backgroundColor:(nullable UIColor*)color andBackgroundImage:(nullable UIImage*)image;
+- (void) setRootViewController:(UIViewController *)rootViewController pushTransactionRoute:(CATransitionSubtype)transitionSubType duration:(CGFloat)duration backgroundColor:(nullable UIColor*)color andBackgroundImage:(nullable UIImage*)image;
 
 
-- (void) setRootViewController:(UIViewController *)rootViewController pushManuallyRoute:(NSString*)transitionSubType duration:(CGFloat)duration;
+- (void) setRootViewController:(UIViewController *)rootViewController pushManuallyRoute:(CATransitionSubtype)transitionSubType duration:(CGFloat)duration;
 
 @end
 NS_ASSUME_NONNULL_END

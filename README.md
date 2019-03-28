@@ -57,7 +57,7 @@ $ gem install cocoapods
 
 > CocoaPods 1.1.0+ is required to build AnimationSwitchRootViewController 1.0.0+.
 
-To integrate WebServiceSwift into your Xcode project using CocoaPods, specify it in your `Podfile`:
+To integrate AnimationSwitchRootViewController into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'

@@ -11,27 +11,27 @@ import UIKit
 public extension UIWindow {
     
     ///Transition Direction - equal CATransitionSubType.
-    @objc public enum TransitionDirection: Int {
+    @objc enum TransitionDirection: Int {
         case fromRight
         case fromLeft
         case fromTop
         case fromBottom
         
-        var subType:String {
+        var subType: CATransitionSubtype {
             switch self {
-            case .fromRight:  return kCATransitionFromRight
-            case .fromLeft:   return kCATransitionFromLeft
-            case .fromTop:    return kCATransitionFromTop
-            case .fromBottom: return kCATransitionFromBottom
+            case .fromRight:  return CATransitionSubtype.fromRight
+            case .fromLeft:   return CATransitionSubtype.fromLeft
+            case .fromTop:    return CATransitionSubtype.fromTop
+            case .fromBottom: return CATransitionSubtype.fromBottom
             }
         }
         
         //Bug - kCATransitionFromTop and kCATransitionFromBottom confused in CATransition
-        var subTypeForCATransition:String {
+        var subTypeForCATransition: CATransitionSubtype {
             switch self {
             case .fromRight, .fromLeft:  return subType
-            case .fromTop:    return kCATransitionFromBottom
-            case .fromBottom: return kCATransitionFromTop
+            case .fromTop:    return CATransitionSubtype.fromBottom
+            case .fromBottom: return CATransitionSubtype.fromTop
             }
         }
     }
@@ -47,11 +47,10 @@ public extension UIWindow {
          - backgroundColor: Background color when animation in process. Default is black.
          - backgroundView: View for background when animation in process.
     */
-    @objc public func switchRootViewController(to rootViewController:UIViewController,
-                                         withTransition transition:CATransition,
-                                         backgroundColor:UIColor? = nil,
-                                         backgroundView:UIView? = nil) {
-        
+    @objc func switchRootViewController(to rootViewController: UIViewController,
+                                         withTransition transition: CATransition,
+                                         backgroundColor: UIColor? = nil,
+                                         backgroundView: UIView? = nil) {
         setRootViewController(rootViewController,
                               with: transition,
                               backgroundColor: backgroundColor,
@@ -68,12 +67,11 @@ public extension UIWindow {
          - backgroundColor: Background color when animation in process. Default is black.
          - backgroundView: View for background when animation in process.
      */
-    @objc public func switchRootViewControllerPushTransition(to rootViewController:UIViewController,
-                                                       direction:TransitionDirection,
-                                                       duration:CGFloat = 0.3,
-                                                       backgroundColor:UIColor? = nil,
-                                                       backgroundView:UIView? = nil) {
-        
+    @objc func switchRootViewControllerPushTransition(to rootViewController: UIViewController,
+                                                       direction: TransitionDirection,
+                                                       duration: CGFloat = 0.3,
+                                                       backgroundColor: UIColor? = nil,
+                                                       backgroundView: UIView? = nil) {
         setRootViewController(rootViewController,
                               pushTransactionRoute: direction.subTypeForCATransition,
                               duration: duration,
@@ -91,21 +89,17 @@ public extension UIWindow {
          - backgroundColor: Background color when animation in process. Default is black.
          - backgroundImage: Image for background when animation in process.
      */
-    @objc public func switchRootViewControllerPushTransition(to rootViewController:UIViewController,
-                                                       direction:TransitionDirection,
-                                                       duration:CGFloat = 0.3,
-                                                       backgroundColor:UIColor? = nil,
-                                                       backgroundImage:UIImage) {
-        
+    @objc func switchRootViewControllerPushTransition(to rootViewController: UIViewController,
+                                                       direction: TransitionDirection,
+                                                       duration: CGFloat = 0.3,
+                                                       backgroundColor: UIColor? = nil,
+                                                       backgroundImage: UIImage) {
         setRootViewController(rootViewController,
                               pushTransactionRoute: direction.subTypeForCATransition,
                               duration: duration,
                               backgroundColor: backgroundColor,
                               andBackgroundImage: backgroundImage)
     }
-    
-    
-  
     
     /**
      Manually animation: move snapshots views (old and new).
@@ -118,13 +112,12 @@ public extension UIWindow {
          - duration: Duration animation. Default = 0.4.
          - options: UIViewAnimationOptions for UIView animations.
      */
-    @objc public func switchRootViewControllerManuallyMove(to rootViewController:UIViewController,
-                                                           direction:TransitionDirection,
-                                                           inAnimation:Bool = true,
-                                                           outAnimation:Bool = true,
-                                                           duration:CGFloat = 0.4,
-                                                           options:UIViewAnimationOptions = []) {
-        
+    @objc func switchRootViewControllerManuallyMove(to rootViewController: UIViewController,
+                                                           direction: TransitionDirection,
+                                                           inAnimation: Bool = true,
+                                                           outAnimation: Bool = true,
+                                                           duration: CGFloat = 0.4,
+                                                           options: UIView.AnimationOptions = []) {
         setRootViewController(rootViewController,
                               withManuallyInAnimation: inAnimation,
                               outAnimation: outAnimation,
@@ -132,7 +125,4 @@ public extension UIWindow {
                               duration: duration,
                               options: options)
     }
-    
-    
-    
 }
