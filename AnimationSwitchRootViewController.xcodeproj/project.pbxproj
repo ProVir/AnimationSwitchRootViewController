@@ -12,10 +12,6 @@
 		5080E9411FA56DC500A32E8F /* UIApplication+PVRootWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 50DE24B31FA565EC00DFE080 /* UIApplication+PVRootWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5080E9421FA56DCA00A32E8F /* UIApplication+PVRootWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DE24B41FA565EC00DFE080 /* UIApplication+PVRootWindow.m */; };
 		5080E9441FA56E0000A32E8F /* AnimationSwitchRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5080E9431FA56E0000A32E8F /* AnimationSwitchRootViewController.swift */; };
-		50A1C660224D66E2003A8554 /* UIWindow+PVAnimationSwitchRootViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 50DE24AD1FA55E9400DFE080 /* UIWindow+PVAnimationSwitchRootViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		50A1C661224D66E5003A8554 /* UIWindow+PVAnimationSwitchRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DE24AE1FA55E9400DFE080 /* UIWindow+PVAnimationSwitchRootViewController.m */; };
-		50A1C662224D6747003A8554 /* UIApplication+PVRootWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 50DE24B31FA565EC00DFE080 /* UIApplication+PVRootWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		50A1C663224D674E003A8554 /* UIApplication+PVRootWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DE24B41FA565EC00DFE080 /* UIApplication+PVRootWindow.m */; };
 		50DE248A1FA55D5700DFE080 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DE24891FA55D5700DFE080 /* AppDelegate.swift */; };
 		50DE248C1FA55D5700DFE080 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DE248B1FA55D5700DFE080 /* ViewController.swift */; };
 		50DE248F1FA55D5700DFE080 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50DE248D1FA55D5700DFE080 /* Main.storyboard */; };
@@ -55,7 +51,7 @@
 		5080E9431FA56E0000A32E8F /* AnimationSwitchRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationSwitchRootViewController.swift; sourceTree = "<group>"; };
 		5080E9451FA5F44600A32E8F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		50A1C65C224D6670003A8554 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		50A1C65D224D6670003A8554 /* AnimationSwitchRootViewController.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AnimationSwitchRootViewController.podspec; sourceTree = "<group>"; };
+		50A1C65D224D6670003A8554 /* AnimationSwitchRootViewController.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = AnimationSwitchRootViewController.podspec; sourceTree = "<group>"; };
 		50DE24871FA55D5700DFE080 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50DE24891FA55D5700DFE080 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50DE248B1FA55D5700DFE080 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -157,15 +153,31 @@
 		50DE24BD1FA568FB00DFE080 /* AnimationSwitchRootViewController */ = {
 			isa = PBXGroup;
 			children = (
-				50DE24BE1FA568FB00DFE080 /* AnimationSwitchRootViewController.h */,
+				50FB69612634129D0069FD0B /* ObjC */,
+				50FB6964263412B20069FD0B /* Swift */,
 				50DE24BF1FA568FB00DFE080 /* Info.plist */,
-				5080E9431FA56E0000A32E8F /* AnimationSwitchRootViewController.swift */,
+			);
+			path = AnimationSwitchRootViewController;
+			sourceTree = "<group>";
+		};
+		50FB69612634129D0069FD0B /* ObjC */ = {
+			isa = PBXGroup;
+			children = (
+				50DE24BE1FA568FB00DFE080 /* AnimationSwitchRootViewController.h */,
 				50DE24AD1FA55E9400DFE080 /* UIWindow+PVAnimationSwitchRootViewController.h */,
 				50DE24AE1FA55E9400DFE080 /* UIWindow+PVAnimationSwitchRootViewController.m */,
 				50DE24B31FA565EC00DFE080 /* UIApplication+PVRootWindow.h */,
 				50DE24B41FA565EC00DFE080 /* UIApplication+PVRootWindow.m */,
 			);
-			path = AnimationSwitchRootViewController;
+			path = ObjC;
+			sourceTree = "<group>";
+		};
+		50FB6964263412B20069FD0B /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				5080E9431FA56E0000A32E8F /* AnimationSwitchRootViewController.swift */,
+			);
+			path = Swift;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,8 +187,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50A1C660224D66E2003A8554 /* UIWindow+PVAnimationSwitchRootViewController.h in Headers */,
-				50A1C662224D6747003A8554 /* UIApplication+PVRootWindow.h in Headers */,
 				50DE24A41FA55E5100DFE080 /* AnimationSwitchRootViewControllerObjC.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,7 +266,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = ProVir;
 				TargetAttributes = {
 					50DE24861FA55D5700DFE080 = {
@@ -336,8 +346,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50A1C663224D674E003A8554 /* UIApplication+PVRootWindow.m in Sources */,
-				50A1C661224D66E5003A8554 /* UIWindow+PVAnimationSwitchRootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +414,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -432,7 +441,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -466,6 +475,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -486,7 +496,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;

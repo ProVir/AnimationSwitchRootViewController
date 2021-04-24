@@ -8,6 +8,10 @@
 
 import UIKit
 
+#if canImport(AnimationSwitchRootViewControllerObjC)
+import AnimationSwitchRootViewControllerObjC
+#endif
+
 public extension UIWindow {
     
     ///Transition Direction - equal CATransitionSubType.
